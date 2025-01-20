@@ -19,6 +19,7 @@ body {
     padding-left: 2px;
     padding-right: 100px;
     max-width: 80%;
+    min-width: 50%;
 }
 
 h1 {
@@ -30,6 +31,8 @@ h1 {
     margin-left: 85px;
     margin-right: 225px;
     position: relative;
+    max-width: 50%;
+    min-width: 30%;
     z-index: 2;
 }
 
@@ -37,6 +40,7 @@ h1 {
 .paragraph {
         background: #ffffff;
         max-width: 50%;
+        min-width: 30%;
         border-radius: 12px;
         padding-top: 75px;
         padding-bottom: 20px;
