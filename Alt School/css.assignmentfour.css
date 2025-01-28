@@ -1,0 +1,75 @@
+body {
+    background: #ebdbdb;
+}
+
+.area {
+    border: 2px solid #8b8888;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 0;
+    padding: 20px 30px;
+}
+
+img {
+    max-width: 12%;
+    max-height: 14%;
+    padding-top: 25px;
+
+}
+
+#phones {
+    margin-left: 40%;
+    margin-right: 40%;
+    font-weight: 100;
+    top: 15px;
+    position: relative;
+}
+
+#laptop {
+    display: none;
+}
+
+#laptopstwo {
+    display: none;
+}
+
+#headtag {
+   margin-top: 5px;
+}
+
+#phonestwo {
+    padding-bottom: 5px;
+}
+
+form {
+    background: #ffffff;
+    padding: 0 15px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px; 
+    display: flex;       
+    flex-direction: column;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+
+
+input {
+    padding: 10px; 
+    height: 8px; 
+}
+
+select {
+    -webkit-appearance: none; 
+    -moz-appearance: none;    
+    appearance: auto;         
+    height: 30px;
+    padding-left: 10px;
+}

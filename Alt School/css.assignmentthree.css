@@ -1,0 +1,40 @@
+body {
+    background-color: #a7a8cd;
+    padding: 50px 500px;
+    margin: 0 auto;
+}
+
+figure {
+    max-width: 360px;
+    height: 470px;
+    background: #ffffff;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: justify;
+    font-family: quicksand;
+}
+
+figcaption {
+    padding: 2px 25px;
+    font-size: 1rem;
+}
+
+.text {
+    font-size: .8rem;
+    font-weight: 250;
+    color: #666262;
+}
+
+.tag {
+  background: #fdf0af;
+  font-size: 1rem;
+  font-weight: 1000;
+  line-height: 1.5;
+  position: absolute;
+  padding: 2px 12px;
+  top: 75px;
+  left: 530px;
+  border-radius: 6px 30px 30px 6px;
+}
+
+
