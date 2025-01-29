@@ -1,14 +1,38 @@
 body {
-    background: #ebdbdb;
+    background: #d6d4d4;
+    font-family: open sans;
+    box-sizing: border-box;
 }
 
 .area {
-    background: #e4f8f37a;
-    border: 2px solid #8b8888;
-    margin-left: 40%;
-    margin-right: 40%;
-    margin-top: 0;
+    background: #daebe67a;
+    width: 80%;
+    height: auto;
+    border: 1px solid #575757;
+    margin: 0 auto;
+    margin-top: 40px;
     padding: 20px 30px;
+}
+
+label, input, select, #register {
+    font-size: smaller;
+    font-weight: 500;
+}
+
+#phones{
+        margin-left: 6%;
+        margin-bottom: 1.5%;
+        font-weight: 100;
+        top: 0px;
+        position: absolute;
+        font-size: smaller;
+        color: #3b3939;
+        overflow: hidden;
+}
+
+#phonestwo {
+    color: #918c8c;
+    font-weight: bolder;
 }
 
 img {
@@ -16,14 +40,6 @@ img {
     max-height: 14%;
     padding-top: 25px;
 
-}
-
-#phones {
-    margin-left: 40%;
-    margin-right: 40%;
-    font-weight: 100;
-    top: 15px;
-    position: relative;
 }
 
 #laptop {
@@ -40,10 +56,13 @@ img {
 
 #phonestwo {
     padding-bottom: 5px;
+    font-size: smaller;
+    font-weight: lighter;
 }
 
 form {
     background: #ffffff;
+    border-radius: 5px;
     padding: 0 15px;
     padding-top: 15px;
     padding-bottom: 40px;
@@ -78,12 +97,31 @@ select {
 button {
     background: #45a78bee;
     color: #ffffff;
-    width: 220px;
+    width: 100%;
     height: 30px;
-    padding-right: 12px;
+    padding-right: 14px;
     border: hidden;
 }
 
 a {
     color: #45a78bee;
+}
+
+input:focus, select:focus {
+    border-color: #45a78bee;
+    border-width: 1px;
+    border-style: solid;
+    outline: none;
+}
+
+h3 {
+    font-size: larger;
+}
+
+option:first-child, #faint {
+    color: #726a6a;
+}
+
+#register {
+    padding-left: 8px;
 }
