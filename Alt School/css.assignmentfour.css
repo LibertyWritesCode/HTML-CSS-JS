@@ -30,16 +30,10 @@ label, input, select, #register {
         overflow: hidden;
 }
 
-#phonestwo {
-    color: #918c8c;
-    font-weight: bolder;
-}
-
 img {
     max-width: 12%;
     max-height: 14%;
     padding-top: 25px;
-
 }
 
 #laptop {
@@ -58,6 +52,7 @@ img {
     padding-bottom: 5px;
     font-size: smaller;
     font-weight: lighter;
+    color: #918c8c;
 }
 
 form {
@@ -78,8 +73,6 @@ form {
     display: block;
     margin-bottom: 8px;
 }
-
- 
 
 input {
     padding: 10px; 
@@ -124,4 +117,108 @@ option:first-child, #faint {
 
 #register {
     padding-left: 8px;
+}
+
+
+
+
+@media screen and (min-width: 900px) and (orientation: landscape) {
+    #laptopstwo, #laptop {
+        display: block;
+    }
+   
+    #phonestwo, #phones {
+        visibility: hidden;
+    }
+    
+    #laptopstwo {
+        padding-bottom: 5px;
+        font-size: smaller;
+        font-weight: lighter;
+        color: #918c8c;
+    }
+
+    #laptop{
+        margin-left: 5%;
+        margin-bottom: 1.5%;
+        font-weight: 100;
+        top: 0px;
+        position: absolute;
+        font-size: smaller;
+        color: #3b3939;
+        overflow: hidden;
+    }
+    
+    .area {
+        background: #daebe67a;
+        width: 80%;
+        height: 600px;
+        max-width: 1200px;
+        max-height: 600px;
+        border: hidden;
+        margin: 0 auto;
+        margin-top: 40px;
+        padding: 2% 5%;
+        justify-content: flex-end; /* Align content to the right */
+        align-items: flex-start; /* Vertically center the content */
+        display: flex; /* Added flex to allow right alignment of the form */
+    }
+
+    form {
+        background: #ffffff;
+        border-radius: 5px;
+        padding: 0 15px;
+        padding-top: 15px;
+        padding-bottom: 100px;
+        width: 900px;
+        max-width: 1000px;
+        max-height: 400px;
+        margin-left: auto; /* Push form to the right side */
+        display: grid; /* Using grid layout for the form */
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-rows: repeat(5, auto);
+    }
+    
+    .form-group {
+        display: grid;
+        margin-bottom: 20px; 
+    }
+    
+    .form-label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    
+    input {
+        padding: 10px; 
+        height: 8px; 
+    }
+
+    label, input, select, #register {
+        font-size: smaller;
+        font-weight: 500;
+    }
+    
+    img {
+        max-width: 6%;
+        max-height: 10%;
+        padding-top: 25px;
+    }
+    
+    button {
+        background: #45a78bee;
+        color: #ffffff;
+        width: 100%;
+        height: 30px;
+        padding-right: 14px;
+        border: hidden;
+    }
+    
+    h3 {
+        font-size: x-large;
+    }
+    
+    #register {
+        padding-left: 8px;
+    }
 }
