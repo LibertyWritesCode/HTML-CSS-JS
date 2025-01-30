@@ -57,10 +57,12 @@ img {
 
 form {
     background: #ffffff;
+    box-sizing: border-box;
     border-radius: 5px;
     padding: 0 15px;
     padding-top: 15px;
     padding-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
@@ -164,7 +166,7 @@ option:first-child, #faint {
     }
 
     form {
-        box-sizing: border-box;
+        box-sizing: border-box;  
         background: #ffffff;
         border-radius: 5px;
         padding: 20px 12px;
