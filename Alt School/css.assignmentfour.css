@@ -76,7 +76,7 @@ form {
 
 input {
     padding: 10px; 
-    height: 8px; 
+    height: 6px; 
 }
 
 select {
@@ -122,9 +122,9 @@ option:first-child, #faint {
 
 
 
-@media screen and (min-width: 900px) and (orientation: landscape) {
+@media screen and (min-width: 750px) and (orientation: landscape) {
     #laptopstwo, #laptop {
-        display: block;
+        display: inline;
     }
    
     #phonestwo, #phones {
@@ -139,7 +139,7 @@ option:first-child, #faint {
     }
 
     #laptop{
-        margin-left: 5%;
+        margin-left: 7%;
         margin-bottom: 1.5%;
         font-weight: 100;
         top: 0px;
@@ -159,39 +159,35 @@ option:first-child, #faint {
         margin: 0 auto;
         margin-top: 40px;
         padding: 2% 5%;
-        justify-content: flex-end; /* Align content to the right */
-        align-items: flex-start; /* Vertically center the content */
-        display: flex; /* Added flex to allow right alignment of the form */
+        display: flex;
+        align-items: center;
     }
 
     form {
+        box-sizing: border-box;
         background: #ffffff;
         border-radius: 5px;
-        padding: 0 15px;
-        padding-top: 15px;
-        padding-bottom: 100px;
-        width: 900px;
-        max-width: 1000px;
-        max-height: 400px;
-        margin-left: auto; /* Push form to the right side */
-        display: grid; /* Using grid layout for the form */
-        grid-template-columns: 1fr; /* Single column layout */
-        grid-template-rows: repeat(5, auto);
+        padding: 20px 12px;
+        margin-left: 100px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
     
     .form-group {
-        display: grid;
-        margin-bottom: 20px; 
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        width: 45%;
     }
-    
-    .form-label {
-        display: block;
-        margin-bottom: 8px;
-    }
+
     
     input {
         padding: 10px; 
-        height: 8px; 
+        height: 6px; 
+        
     }
 
     label, input, select, #register {
@@ -208,7 +204,7 @@ option:first-child, #faint {
     button {
         background: #45a78bee;
         color: #ffffff;
-        width: 100%;
+        width: 94%;
         height: 30px;
         padding-right: 14px;
         border: hidden;
@@ -219,6 +215,7 @@ option:first-child, #faint {
     }
     
     #register {
-        padding-left: 8px;
+        padding-left: 5px;
+        padding-right: 15px;
     }
 }
