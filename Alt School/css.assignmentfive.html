@@ -7,71 +7,83 @@
     <title>CSS Assignment Five</title>
 </head>
 <body>
-    
-    <div> 
-       <span>WP Pusher</span>  
-       <span>Download</span>
-       <span>Learn more</span>
-       <span>Pricing</span>
-       <span>Help</span>
-       <span>Account</span>
-       
+    <div class="area">
+
+        <div class="grid-container"> 
+            <span id="head">WP Pusher</span>  
+            <span>Download</span>
+            <span>Learn more</span>
+            <span>Pricing</span>
+            <span>Help</span>
+            <span>Account</span>
+            <div class="line"></div>
+         </div>
+     
+         <div class="second">
+         
+             <form action="www.google.com" method="GET">
+                <h3>Checkout</h3>
+                 <div class="mid">Your Basic Information</div>
+                 
+                 <div class="form-group">
+                     <label class="label-form" for="first name">First Name</label>
+                     <input class="full" id="first name" name="first name" type="text" placeholder="Jane" required>
+                    </div>
+
+                 <div class="form-group">
+                    <label class="label-form" for="last name">Last Name</label>
+                    <input class="full" id="last name" name="last name" type="text" placeholder="Doe" required>
+                 </div>
+                    
+                <div>
+                    <label class="label-form" for="e-mail">E-mail</label>
+                    <input class="half" id="email" name="email" type="email" placeholder="janedoe@example.com" required>
+                    
+                 </div> 
+     
+                 <div class="form-group">
+                    <div class="mid">Your Payment Information</div>
+                    <label class="label-form"for="card number">Credit Card</label>
+                    <input id="credit card" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" 
+                    autocomplete="cc-number" maxlength="19" 
+                    placeholder="Card Number MM/YY CVC" required>
+                 </div>
+                    
+
+                 <button>Buy WP Pusher</button>
+             </form>
+     
+             <p><span>Need any help?</span> Don't hesitate to contact support</p>
+            
+             <p>Powered by <span>Stripe</span></p>
+         
+         </div>
+     
+         <div>
+             <p>Freelancer</p>
+             <p><span>$</span>99 <span>/year</span></p>
+             <p>Automatically renews after 1 year</p>
+             <li>
+                 <ul>Use on 5 client sites</ul>
+                 <ul>Private repositories</ul>
+                 <ul>Email support</ul>
+             </li>
+     
+             <p>Need <span>20</span> clients?</p>
+         <p>Switch to the Agency plan</p>
+         <p>FTP is horrible to deal with. WP Pusher solves that issue, 
+             and the customer support is awesome!</p>
+             <img src="" alt="">
+            <p>Kirk Beard</p>
+     
+         </div>
+     
+            <div>
+             <p>&copy; 2018 WP Pusher IVS . <a href="www.google.com">Terms of Service</a> </p>
+            </div>
+
     </div>
-
-
-    <div>
-        <p>Freelancer</p>
-        <p><span>$</span>99 <span>/year</span></p>
-        <p>Automatically renews after 1 year</p>
-        <li>
-            <ul>Use on 5 client sites</ul>
-            <ul>Private repositories</ul>
-            <ul>Email support</ul>
-        </li>
-
-        <p>Need <span>20</span> clients?</p>
-    <p>Switch to the Agency plan</p>
-    <p>FTP is horrible to deal with. WP Pusher solves that issue, 
-        and the customer support is awesome!</p>
-        <img src="" alt="">
-       <p>Kirk Beard</p>
-
-    </div>
-
-
-       <div>
-        <p>Checkout</p>
-        <form action="www.google.com" method="GET">
-            <li>
-                <ol>Your Basic Information</ol>
-                <label for="first name">First Name</label>
-                <input id="first name" name="first name" type="text" placeholder="Jane" required>
-
-                <label for="last name">Last Name</label>
-                <input id="last name" name="last name" type="text" placeholder="Doe" required>
-
-                <label for="e-mail">E-mail</label>
-                <input id="email" name="email" type="email" placeholder="janedoe@example.com" required>
-
-                <ol>Your Payment Information</ol>
-                <label for="card number">Credit Card</label>
-                <input id="credit card" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" 
-                autocomplete="cc-number" maxlength="19" 
-                placeholder="Card Number MM/YY CVC" required>
-            </li>   
-            <button>Buy WP Pusher</button>
-        </form>
-
-        <p><span>Need any help?</span> Don't hesitate to contact support</p>
-       
-        <p>Powered by <span>Stripe</span></p>
-    
-    </div>
-
-
-       <div>
-        <p>&copy; 2018 WP Pusher IVS . <a href="www.google.com">Terms of Service</a> </p>
-       </div>
         
 </body>
 </html>
+
