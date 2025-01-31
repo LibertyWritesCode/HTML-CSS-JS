@@ -45,10 +45,9 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 10px;
-    flex-wrap: wrap;
 }
 
-.label-form {
+label{
     display: block;
     direction: row;
     margin-bottom: 10px;
@@ -63,11 +62,13 @@ input::placeholder, input {
 input {
     display: block;
     height: 20px;
+    padding-left: 10px;
 }
 
 .full {
     width: 40%;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
 }
 
 .half {
