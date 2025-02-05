@@ -1,80 +1,318 @@
-* {
+/* Basic styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #888484;
+    margin: 0 20px;
+}
+
+/* Styling the logo */
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/* Adding a logo image beside the WP Pusher text */
+header .logo img {
+    margin-right: 10px; /* Adjust the spacing between the logo image and text */
+    width: 70px;
+    height: 50px;
+}
+
+/* Styling the navigation links */
+header .nav a {
+    text-decoration: none;
+    color: #111111;
+    font-size: 16px;
+    padding: 10px 20px; /* Adjusting padding to create a border effect */
+}
+
+/* Adding a box around nav links on hover */
+header .nav a:hover {
+    border: 2px solid #9a9b9c; /* Adding a border around the link */
+    border-radius: 4px; /* Adding rounded corners to the border */
+}
+
+/* Hiding the checkbox used for the hamburger button */
+#menu-toggle {
+    display: none;
+}
+
+/* Styling the hamburger button */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content:space-around;
+    align-items: center; 
+    padding-top: 90px;
+    width: 70%;
+    margin: 0 17%;
+}
+
+.checkout-container {
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 500px; /* Max width of the container */
+    width: 55%;
+    padding: 20px;
+}
+
+.checkout-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Dark text color */
+    padding-bottom: 40px;
+    padding-left: 15px;
+}
+
+.form-section {
+    margin-bottom: 40px;
+    padding: 0 10px;
+}
+
+.form-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    color: #555; /* Lighter text color */
+    display: flex;
+    align-items: center;
+}
+
+.form-section h3 i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
     box-sizing: border-box;
+    border: none;
+    background: #f1f0f0;
 }
 
-.area {
-    background: #f8dbdb;
-    box-sizing: border-box;
-    margin: 2% 3%;
-    padding: 2% 3%;
+.buy-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 800px repeat(5, 1fr);
-    gap: 40px;
-    margin-bottom: 2px;
+.buy-button:hover {
+    background-color: #45a049; /* Darker green on hover */
 }
 
-.line {
-    border-bottom: 1px solid #dfd2d2;
-    width: 170%;
+.help-text {
+    font-size: 14px;
+    color: #777; /* Gray text color */
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
 }
 
-#head {
-    padding-left: 15%;
+.help-text i {
+    margin-right: 5px; /* Space between icon and text */
 }
 
-.second {
-    background: #ffffff;
-    box-sizing: border-box;
-    padding: 1% 2%;
-    margin: 5% 18%;
-    width: 35%;
-    height: 550px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+.help-text a {
+    color: #4CAF50; /* Green link */
+    text-decoration: none;
 }
 
-.mid {
-    padding-top: 40px;
-    padding-bottom: 20px;
-    padding-left: 35px;
+.help-text a:hover {
+    text-decoration: underline;
 }
 
-.form-group {
+input:focus {
+    border-color: #84d1b8;
+    border-width: 1px;
+    border-style: solid;
+    outline: none;
+}
+
+.powered-by {
+    font-size: 12px;
+    color: #999; /* Light gray text color */
+    margin-top: 10px;
+    text-align: center;
+}
+
+.powered-by .stripe {
+    font-weight: bold;
+    color: #6772E5; /* Stripe brand color */
+}
+
+.name-fields {
+    display: flex;
+    gap: 10px; /* Space between first name and last name fields */
+}
+
+.name-fields > div {
+    flex-grow: 1;
+}
+
+
+/* Main container for checkout and freelancer sections */
+.checkout-container {
+    display: flex;
+    flex-direction: row; /* Place sections side by side */
+    justify-content: space-between; /* Ensure even spacing */
+    max-width: 900px; /* Adjust max-width as needed */
+    width: 100%;
+}
+
+/* Styling for the freelancer section */
+.pricing-info {
+    background-color: #0096ff; /* Blue background */
+    color: white; /* White text color */
+    padding: 20px;
+    width: 30%;
+    border-top-right-radius: 8px; /* Rounded corners at top right */
+    border-bottom-right-radius: 8px; /* Rounded corners at bottom right */
+    border-top-left-radius: 0; /* Remove top left border radius */
+    border-bottom-left-radius: 0; /* Remove bottom left border radius */
+    font-size: 18px;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
-    padding-bottom: 10px;
+    gap: 10px; /* Space between elements */
+    height: 100%; /* Ensure it has the same height as the container */
+    box-sizing: border-box;
 }
 
-label{
+/* Ensure the checkout form takes up the remaining space */
+.checkout-form {
+    flex-grow: 1;
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Styling for the price */
+.pricing-info .price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00; /* Yellow text color for the price */
+}
+
+/* Styling for the list items */
+.pricing-info ul {
+    list-style-type: none; /* Remove default list styling */
+    padding-left: 0;
+}
+
+.pricing-info ul li {
+    padding: 5px 0; /* Space between list items */
+}
+
+/* Styling for the link */
+.pricing-info a {
+    color: #ffffff; /* White text color */
+    text-decoration: underline; /* Underline the link */
+}
+
+.pricing-info a:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+
+/* Styling for the blockquote */
+.pricing-info blockquote {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    padding: 10px;
+    border-left: 4px solid #ffcc00; /* Yellow border on the left */
+    margin: 20px 0;
+    font-style: italic; /* Italicize the quote */
+}
+
+/* Styling for the cite */
+.pricing-info cite {
     display: block;
-    direction: row;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: normal; /* Normal font style for the cite */
 }
 
-input::placeholder, input {
-    background-color: #f3ecec;
-    color: #bbb7b7;
-    border: none;
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #e0e0e0;
 }
 
-input {
-    display: block;
-    height: 20px;
-    padding-left: 10px;
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #777; /* Gray text color */
 }
 
-.full {
-    width: 40%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;  
+footer a {
+    color: #0096ff; /* Blue link color */
+    text-decoration: none;
 }
 
-.half {
-    width: 70%;
+footer a:hover {
+    text-decoration: underline; /* Underline link on hover */
 }
 
 
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    /* Show the hamburger button */
+    .hamburger {
+        display: block;
+    }
 
+    /* Hide the navigation links */
+    .nav {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px; /* Adjust based on the header's height */
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+    }
 
+    /* Show the navigation links when the checkbox is checked */
+    #menu-toggle:checked ~ .hamburger + .nav {
+        display: flex;
+    }
+}
