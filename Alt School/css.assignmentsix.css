@@ -1,0 +1,474 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* First Part*/
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    height: 40px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links li {
+    position: relative;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-links .dropdown {
+    position: relative;
+    display: inline-block;
+}
+.nav-links .dropdown .dropdown-icon {
+    margin-left: 5px;
+}
+.nav-links .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    min-width: 160px;
+}
+.nav-links .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.nav-links .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.nav-links li:hover .dropdown-content {
+    display: block;
+}
+.auth-buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.login {
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+.signup {
+    background-color: #007bff;
+    color: #fff;
+}
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #fff;
+}
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.hero h2 {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+.hero .center-text {
+    text-align: center;
+}
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.cta-buttons a {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.btn-signup {
+    background-color: #007bff;
+    color: #fff;
+}
+.btn-learn-more {
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+
+/* Second Part*/
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.feature {
+    text-align: center;
+}
+
+.one-stop {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.one-stop h2 {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+.why-choose {
+    margin: 40px 0;
+}
+
+.why-choose h2 {
+    color: #007bff;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 45%;
+    margin: 20px 0;
+}
+
+.service h3 {
+    color: #007bff;
+}
+
+/* Third Part*/
+
+.pricing {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.pricing-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.pricing-header .highlight {
+    color: #007bff;
+}
+
+.pricing-header p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.plan {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.plan h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.plan .price {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.plan ul li {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.pricing-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pricing-buttons button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-pricing {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.select-pricing {
+    background-color: #fff;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+
+/* Fourth Part*/
+
+.url-shortening-form {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #333;
+}
+
+.url-shortening-form h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.input-group input, .input-group select {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus, .input-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.btn-trim {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-trim:hover {
+    background-color: #0056b3;
+}
+
+.disclaimer {
+    font-size: 0.8em;
+    color: #777;
+    margin-top: 20px;
+}
+
+.disclaimer a {
+    color: #007bff;
+    text-decoration: none;
+    transition: text-decoration 0.3s;
+}
+
+.disclaimer a:hover {
+    text-decoration: underline;
+}
+
+/* Fifth Part*/
+
+.faq {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-item .question {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.faq-item:hover .question {
+    border: 2px solid rgb(245, 115, 115);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.faq-item .answer {
+    display: none;
+    padding: 10px 0;
+}
+
+.faq-item.active .answer {
+    display: block;
+}
+
+/* Sixth Part*/
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.cta-button {
+    background-color: #61dafb;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #21a1f1;
+}
+
+
+/* Seventh Part*/
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    color: #333;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 20px;
+}
+
+.footer-column h2, .footer-column h3 {
+    margin-top: 0;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #0073e6;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    color: #333;
+}
+
+.footer-bottom p {
+    margin-top: 100%;
+}
+
