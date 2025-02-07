@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+}
+
+table {
+    margin: auto;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+}
+
+.vertical {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.bottom {
+    border-bottom: 1px solid black;
+}
+
+#rule {
+    border-bottom: 1px solid black;
+
+}
+
+#rule2 {
+    border-bottom: 1px solid black;
+}
