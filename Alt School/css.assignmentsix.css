@@ -1,8 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+}
+
+.effect {
+    background-image: url(effect.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    opacity: 100; 
 }
 
 /* First Part*/
@@ -15,6 +26,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 10%;
 }
 .logo img {
     height: 40px;
@@ -63,39 +75,44 @@ nav {
 .auth-buttons a {
     text-decoration: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 25px;
     margin-left: 10px;
 }
 .login {
     background-color: transparent;
     color: #007bff;
-    border: 1px solid #007bff;
 }
 .signup {
-    background-color: #007bff;
+    background: #007bff;
     color: #fff;
 }
+
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 50px 20px;
     background-color: #fff;
 }
-.hero h1 {
+.hero h2 {
     font-size: 2.5em;
     margin-bottom: 10px;
 }
-.hero h2 {
-    font-size: 2em;
+.hero .blue {
     color: #007bff;
     margin-bottom: 20px;
+    background-image: url(blueline.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-bottom: 25px; 
 }
+
 .hero p {
-    font-size: 1.2em;
-    color: #666;
     margin-bottom: 30px;
 }
 .hero .center-text {
     text-align: center;
+    margin: 0 auto;
+    margin-top: 3%;
+    width: 50%;
 }
 .cta-buttons {
     display: flex;
@@ -104,8 +121,9 @@ nav {
 }
 .cta-buttons a {
     text-decoration: none;
+    margin-top: 3.5%;
     padding: 15px 30px;
-    border-radius: 5px;
+    border-radius: 25px;
     font-size: 1em;
 }
 .btn-signup {
@@ -118,53 +136,125 @@ nav {
     border: 1px solid #007bff;
 }
 
+.container {
+    width: 40%;
+    margin: 0 auto;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.container .top-image {
+    width: 55%;
+    margin: 5px 0;
+    align-self: flex-start;
+    position: relative;
+    left: -22%;
+}
+.bottom-border {
+    border: 1px dotted #007bff;
+    margin-top: 12%;
+    border-radius: 25px;
+    padding: 30px 48px;
+    position: relative;
+    background-color: #fff;
+    display: block;
+}
+
+.bottom-border p {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.bottom-image {
+    width: 100%; 
+    margin-top: 70px;
+}
+
+
 
 /* Second Part*/
+.one-stop {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fdfcfc;
+    margin-top: -50px;
+    margin-bottom: 30px;
+}
 
+.one-stop .one {
+    margin-left: 10px;
+}
+.one-stop .possible {
+    color: #007bff;
+}
+.one-stop .four {
+    display: block;
+    padding-left: 100px;
+}
 .features {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
+    margin-right: 100px;
 }
 
 .feature {
     text-align: center;
+    font-size: .7em;
 }
 
-.one-stop {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-}
-
-.one-stop h2 {
+.feature h2 {
     font-size: 2em;
-    color: #007bff;
-    margin-bottom: 30px;
+}
+
+.why-choose-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 10px; /* Space between border and text */
+}
+
+.short-border {
+    width: 3px;
+    height: 30px; /* Adjust to make it short */
+    margin-top: 5px; /* Align it with the heading */
+    margin-left: 12%;
+    background: linear-gradient(to bottom, #1f2124, #f5efef);
 }
 
 .why-choose {
-    margin: 40px 0;
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+ .description {
+    margin-left: 13%;
+    width: 22%;
 }
 
-.why-choose h2 {
-    color: #007bff;
+.why-choose span {
+    color: #007bff; /* Blue color for "Scissors" */
 }
 
 .services {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-left: 41%;
+    margin-top: -18%;
 }
 
 .service {
     width: 45%;
     margin: 20px 0;
+    padding-right: 80px;
 }
 
-.service h3 {
-    color: #007bff;
+.service img {
+    width: 32px;
 }
+
 
 /* Third Part*/
 
